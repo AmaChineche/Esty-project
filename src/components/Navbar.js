@@ -9,9 +9,9 @@ import { FaRegHeart } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <div className='shadow-lg bg-gray-300'>
+    <div className='shadow-lg bg-gray-300 md:bg-slate-400 lg:bg-gray-300'>
 
-<div className=' flex justify-between  px-20 py-4'>
+<div className=' flex justify-between  px-20 py-4 '>
        <a href='#' > <Image alt="Logo" src="/Esty.png" width={100} height={350} /> </a>
 
     <div className='flex justify-between px-2 gap-5 align-middle items-center '>
@@ -21,7 +21,7 @@ const Navbar = () => {
             <Link href="/signin" className='border-b p-2 rounded-lg justify-center items-center hover:text-white hover:bg-gray-400' >Sign In</Link>
             
             <Link href="/favourite" className='' ><FaRegHeart /></Link>
-            <Link href="/gift" className='hover:bg-gray-400 align-middle items-center justify-center w-8 h-8 transition-all duration-300 hover:rounded-lg' ><GoGift /></Link>
+            <Link href="/gift" className='hover:bg-gray-400 align-middle items-center justify-center transition-all duration-300 hover:rounded-lg' ><GoGift /></Link>
             <Link href="/cart" className='border-gray-500 rounded-lg ' > <IoCartOutline /></Link>
             </div>
     </div>
